@@ -1,0 +1,86 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+h1, h3 {
+  font-family: 'Sans-serif', Arial, Helvetica, sans-serif;
+}
+.hero-headline {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.hero-subheading {
+  font-size: 1.25rem;
+  color: #dddddd;
+}
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #ff6f61, #d63384);
+  border: none;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #333333;
+  color: #ffffff;
+}
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 20px;
+  background-color: #282828;
+  color: #aaaaaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.footer-nav a, .footer-social a {
+  color: #aaaaaa;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-nav a:hover, .footer-social a:hover {
+  color: #ffffff;
+}
+
+/* Hover and Smoothness Effects */
+*[class^="hover-"]:hover {
+  filter: brightness(1.2);
+}
+
+/* Liquid Glass Feel */
+:root {
+  --bg-light: rgba(255, 255, 255, 0.2);
+  --bg-dark: rgba(0, 0, 0, 0.2);
+}
+body.light-mode {
+  background: var(--bg-light);
+}
+body.dark-mode {
+  background: var(--bg-dark);
+}
