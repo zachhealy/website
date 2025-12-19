@@ -1,111 +1,22 @@
+<!-- Example HTML with modern design elements and support for dark and light mode -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Zach Healy</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <link rel='icon' href="zjh.png">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/5c1e65ff90.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  </head>
-
-  
-  <body>
-    <div class = 'head'>
-        <div id="particles-js">
-          <div class = 'header'>
-            <nav>
-              <ul>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html"><img src = 'zjh-white.png'></a></li>
-                <li><a href="design.html">Design</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        
-        <div class="container">
-            <h1>Zach Healy</h1>
-            <h2>Developer & Graphic Designer</h2>
-        </div>
-    </div>
-
-    <div class="am-container">
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>Getting to design and create new software and websites with real values was always something that 
-                I was drawn towards, and with both a programming and design background, I decided to take the steps 
-                to be a frontend developer. I am currently working towards my computer science degree right now, and 
-                have been a graphic designer for the last 2 years, working for my university as well as for companies 
-                such as Redbull and Riot Games.</p>
-        </section>
-    </div>
-    </br>
-    <div class="proj-container">
-      <div class = 'proj-head'>
-        <h2>Projects</h2>
-        <p>A pretty good summary of a lot of my projects! If nothing here is stunning to you, feel free to check
-          out my <a href = 'https://www.github.com/zachhealy'>GitHub</a>, I try to keep all of my code updated on there
-          for both my own sake and the sake of anyone interested! It features most of the work from my 4 years of college
-          as well as some personal projects like the website we are on now!
-        </p>
-      </div>
-        <section class="project-buttons">
-            <a class="project-button" href="https://github.com/zachhealy/NHLDataAnalysis">
-                <h3>NHL Player Stat Tracker</h3>
-                <p>My final project that I made for my Computer Science 3 class. It uses selenium to scrape the NHL website and organizes all of the stat-lines in a readable table. Also allowing for organization and searching either by stat-line or player name</p>
-            </a>
-            <a class="project-button" href="https://github.com/zachhealy/website">
-                <h3>My Personal Website</h3>
-                <p>A website coded using HTML, CSS, and JavaScript to showcase my development and design portfolio! Future plans include a spot for people to submit a form to get in contact with me, managed through a database.</p>
-            </a>
-            <a class="project-button" href="https://plantjobs.greatdane.com">
-                <h3>Plant Jobs Maintenance</h3>
-                <p>This was a task given during my internship at Great Dane to keep their jobs websites up to date for their various plants, in multiple languages</p>
-            </a>
-            <a class="project-button" href="https://fleet-pulse.com">
-                <h3>FleetPulse</h3>
-                <p>This was a project I worked on during my internship at Great Dane. The goal was to work on a website's flow and SEO in order to help retain existing customers, as well as draw in new ones.</p>
-            </a>
-            <a class="project-button" href="https://github.com/zachhealy/programmingProblems">
-              <h3>Programming Problems</h3>
-              <p>This repo houses a bunch of the various programming problems from sites such as LeetCode and HackerRank that I've stored over time. Have a challenge for me? Message me and I'd love to give it a shot!</p>
-          </a>
-            <a class = 'project-button' onclick="confetti({particleCount: 1000, spread: 10000, origin: { y: 0.6 }});">
-                <h3>Confetti</h3>
-                <p>For all those times the Canvas confetti doesn't work</p>
-            </a>
-        </section>
-        
-    </div>
-
-    <br>
-    
-      <section class = 'footer'>
-        <div><p>
-          Copyright ©
-              <script>
-                  document.write(new Date().getFullYear())
-              </script>
-              Zach Healy
-              <a href = 'https://github.com/zachhealy' target ="_blank">
-                  <i class="fab fa-github"></i>
-              </a>
-          </p>
-          <p>Connect with me on <a href="https://www.linkedin.com/in/zachhealy/">Linkedin</a>,</p>
-          <p>Even follow me on <a href="http://twitter.com/zjhealy">Twitter</a>!</p> 
-        </div>
-      </section>
-      
-      <script src = 'js/confetti.js'></script>
-      <script src = 'js/parts.js'></script>
-      <script src = 'js/transition.js'></script>
-
-  </body>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revamped Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="liquid-glass">
+    <h1>Liquid Glass Design</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+  <main>
+    <section>
+      <p>Welcome to the revamped website with a modern liquid glass design! Toggle above to switch modes.</p>
+    </section>
+  </main>
+</body>
 </html>

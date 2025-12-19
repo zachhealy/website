@@ -1,0 +1,38 @@
+/* Example CSS for modern liquid glass design with dark and light mode */
+:root {
+  --background-light: #ffffff;
+  --background-dark: #121212;
+  --primary-light: #f0f0f0;
+  --primary-dark: #1f1f1f;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+[data-theme='light'] {
+  --background: var(--background-light);
+  --primary: var(--primary-light);
+  --text: var(--text-light);
+}
+
+[data-theme='dark'] {
+  --background: var(--background-dark);
+  --primary: var(--primary-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.liquid-glass {
+  background: var(--primary);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
