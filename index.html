@@ -21,9 +21,8 @@
           <div class = 'header'>
             <nav>
               <ul>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html"><img src = 'zjh-white.png'></a></li>
-                <li><a href="design.html">Design</a></li>
+                <!-- Removed Resume and Design links; keep logo centered -->
+                <li><a href="index.html"><img src = 'zjh-white.png' alt="Zach Healy"></a></li>
               </ul>
             </nav>
           </div>
@@ -31,7 +30,12 @@
         
         <div class="container">
             <h1>Zach Healy</h1>
-            <h2>Developer & Graphic Designer</h2>
+
+            <!-- Flashy animated subheading -->
+            <h2 class="hero-subheading" aria-live="polite">
+              <span id="hero-words" class="hero-words">Developer &amp; Graphic Designer</span>
+              <span class="hero-cursor" aria-hidden="true">|</span>
+            </h2>
         </div>
     </div>
 
@@ -58,11 +62,11 @@
         <section class="project-buttons">
             <a class="project-button" href="https://github.com/zachhealy/NHLDataAnalysis">
                 <h3>NHL Player Stat Tracker</h3>
-                <p>My final project that I made for my Computer Science 3 class. It uses selenium to scrape the NHL website and organizes all of the stat-lines in a readable table. Also allowing for organization and searching either by stat-line or player name</p>
+                <p>My final project that I made for my Computer Science 3 class. It uses selenium to scrape the NHL website and organizes all of the stat-lines in a readable table. Also allowing f[...]</p>
             </a>
             <a class="project-button" href="https://github.com/zachhealy/website">
                 <h3>My Personal Website</h3>
-                <p>A website coded using HTML, CSS, and JavaScript to showcase my development and design portfolio! Future plans include a spot for people to submit a form to get in contact with me, managed through a database.</p>
+                <p>A website coded using HTML, CSS, and JavaScript to showcase my development and design portfolio! Future plans include a spot for people to submit a form to get in contact with m[...]</p>
             </a>
             <a class="project-button" href="https://plantjobs.greatdane.com">
                 <h3>Plant Jobs Maintenance</h3>
@@ -70,11 +74,11 @@
             </a>
             <a class="project-button" href="https://fleet-pulse.com">
                 <h3>FleetPulse</h3>
-                <p>This was a project I worked on during my internship at Great Dane. The goal was to work on a website's flow and SEO in order to help retain existing customers, as well as draw in new ones.</p>
+                <p>This was a project I worked on during my internship at Great Dane. The goal was to work on a website's flow and SEO in order to help retain existing customers, as well as draw i[...]</p>
             </a>
             <a class="project-button" href="https://github.com/zachhealy/programmingProblems">
               <h3>Programming Problems</h3>
-              <p>This repo houses a bunch of the various programming problems from sites such as LeetCode and HackerRank that I've stored over time. Have a challenge for me? Message me and I'd love to give it a shot!</p>
+              <p>This repo houses a bunch of the various programming problems from sites such as LeetCode and HackerRank that I've stored over time. Have a challenge for me? Message me and I'd lov[...]</p>
           </a>
             <a class = 'project-button' onclick="confetti({particleCount: 1000, spread: 10000, origin: { y: 0.6 }});">
                 <h3>Confetti</h3>
@@ -102,6 +106,7 @@
         </div>
       </section>
       
+      <script src="js/hero-subheading.js" defer></script>
       <script src = 'js/confetti.js'></script>
       <script src = 'js/parts.js'></script>
       <script src = 'js/transition.js'></script>
