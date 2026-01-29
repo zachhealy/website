@@ -1,243 +1,276 @@
+/* Modern SaaS-style CSS — replaces existing index.css
+   - Uses CSS variables for a consistent palette
+   - Clean layout, card-style project tiles, refined header/nav, improved typography
+   - Only styling changes; no content/HTML edits
+*/
+
+/* Theme variables */
+:root{
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --muted: #6b7280;
+  --text: #0b1220;
+  --primary: #5266ff;    /* main CTA color */
+  --primary-strong: #3949ff;
+  --accent: #06b6d4;
+  --glass: rgba(255,255,255,0.6);
+  --card-shadow: 0 8px 24px rgba(11,18,32,0.06);
+  --radius: 12px;
+  --container-max: 1200px;
+}
+
+/* Reset / base */
+*{box-sizing:border-box}
+html,body{height:100%}
 body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #0f0f23;
   margin: 0;
-  font-size: 16px;
-  padding: 0;
-  color: #fff;
+  font-family: 'Raleway', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+  color: var(--text);
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
 }
 
+/* Links */
 a{
+  color: var(--primary);
   text-decoration: none;
-  color: #56569a;
+  transition: color .18s ease;
 }
+a:hover{ color: var(--primary-strong); text-decoration: underline; }
 
+/* Headings */
 h1{
-  font-size: 15vmin;
-  margin: 10px;
+  font-weight:700;
+  font-size: clamp(36px, 8vw, 96px);
+  line-height:1;
+  margin: 0 0 8px;
+  color: var(--text);
+  letter-spacing: -0.02em;
   text-align: center;
 }
-
 h2{
+  font-weight:600;
+  font-size: clamp(20px, 4.5vw, 36px);
+  margin: 0 0 12px;
+  color: var(--text);
   text-align: center;
-  font-size: 7.5vmin;
+}
+h3{
+  margin:0 0 8px;
+  font-size:18px;
+  color: #111827;
 }
 
-.about-me p{
-  text-align: center;
-}
-
-
-button{
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
+/* Buttons - primary and neutral */
+button,
+button[type="button"]{
+  appearance:none;
+  border:0;
+  background: linear-gradient(90deg, var(--primary), var(--primary-strong));
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #1a1a33;
-  border-color: #1a1a33;
-  color: #fff;
-  box-shadow: 0 0 10px #fff;
-
-}
-
-.container {
-	max-width: 1200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  margin: 180px;
-}
-
-#particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 78%;
-}
-
-#particles-js-design {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.about-me, .project-buttons {
-  margin-top: 30px;
-}
-
-.about-me{
-  margin: 0px 15vw;
-}
-
-.project-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project-button {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  color: #fff;
-  border: 2px solid #fff; /* White outline border */
+  padding: 10px 18px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  background-color: #1a1a33;
-  min-width: 300px;
-  max-width: 500px;
-  flex-grow: 1;
-  flex-basis: 0;
-
+  cursor: pointer;
+  font-weight:600;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+  box-shadow: 0 6px 18px rgba(82,102,255,0.18);
 }
-.am-container{
-  padding: 50px;
-  background-color: #e6e6eb;
-  color: #1a1a33;
-}
-
-.proj-container{
-  padding: 0px 50px;
+button:hover{ transform: translateY(-2px); box-shadow: 0 12px 28px rgba(82,102,255,0.12); }
+button.secondary{
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(11,18,32,0.06);
+  box-shadow: none;
 }
 
-.project-button:hover {
-  background-color: #fff;
-  border-color: #1a1a33;
-  color: #1a1a33;
-  box-shadow: 0 0 10px #fff; /* Adding a glow effect */
-
+/* Page container */
+.container{
+  max-width: var(--container-max);
+  margin: 80px auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding: 0 24px;
 }
 
-.footer{
-  text-align: center;
-  background: #1a1a33;
-  padding: 25px;
-  
-}
-
-.head{
-  padding: 50px;
-  background-size: cover;
-  background-image: url('test.png');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.head-design{
-  padding: 50px;
-  background-size: cover;
-  background-image: url('test.png');
-  align-items: center;
-  justify-content: center;
-  
-}
-
-.proj-head{
-  margin: 0px 15vw;
-  text-align: center;
-}
-
-.header {
-  display: flex;
-  max-width: 100%;
-  color: white;
-  padding: 10px;
-  background-color: rgba(196, 196, 196, 0.1);
-  background-size: cover;
-  justify-content: center;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  align-items: center;
-  border-radius: 10px;
-
-}
-
-.header img{
-  height: 50px;
-  width: 50px;
-}
-
-.header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header nav li {
-  margin-left: 30px;
-  margin-right: 30px;
-  padding: 0px;
-}
-
-.header nav a {
-  text-decoration: none;
-  color: white;
-}
-
-#photo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 10px;
-}
-
-.photo {
-  transition: transform 0.2s ease-in-out;
-  flex: 1;
+/* Header / hero */
+.head, .head-design{
+  width:100%;
+  padding: 64px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
   overflow: hidden;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(82,102,255,0.06) 0%, rgba(6,182,212,0.03) 100%);
+  border-bottom: 1px solid rgba(11,18,32,0.03);
 }
 
-.photo:hover {
-  transform: scale(1.1);
+/* keep particles behind hero content */
+#particles-js, #particles-js-design{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events: none;
+  opacity:0.18;
+  filter: blur(2px);
 }
 
-.gridRow {
-  flex: 25%;
-  max-width: 33%;
-  padding: 0 10px;
+/* hero content sits above particles */
+.head .container, .head-design .container{ position:relative; z-index:1; }
+
+/* Top nav header box */
+.header{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display:flex;
+  align-items:center;
+  gap: 28px;
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(6px);
+  padding: 10px 20px;
+  border-radius: 999px;
+  box-shadow: 0 6px 22px rgba(11,18,32,0.06);
+  z-index: 2;
 }
-
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 800px) {
-  .photo {
-    width: calc(50% - 16px); /* Two columns with gap */
-  }
+.header img{
+  height:44px;
+  width:44px;
+  border-radius:8px;
+  object-fit:cover;
 }
-
-@media screen and (max-width: 600px) {
-  .photo {
-    width: 100%; /* Single column, no gap */
-  }
+.header nav ul {
+  display:flex;
+  gap: 18px;
+  margin:0;
+  padding:0;
+  list-style:none;
+  align-items:center;
 }
+.header nav li{ font-weight:600; color:var(--text); }
+.header nav a{ color:var(--text); padding:8px; border-radius:8px; }
+.header nav a:hover{ background: rgba(11,18,32,0.03); color:var(--primary-strong); }
 
-.container-design {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* About / main content area */
+.am-container{
+  padding: 56px 24px;
+  background: transparent;
+  color: var(--text);
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+.about-me{
+  max-width: 980px;
+  margin: 0 auto;
   text-align: center;
-  max-width: fit-content;
-  padding-bottom: 0px;
-  padding-top: 100px;
-  margin: auto;
-  max-width: 1200px;
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(11,18,32,0.04);
 }
+
+/* Projects layout */
+.proj-container{
+  width:100%;
+  max-width: var(--container-max);
+  margin: 36px auto;
+  padding: 0 24px 48px;
+}
+.proj-head{ text-align:center; margin-bottom: 18px; }
+
+/* Card-style project buttons (convert from plain anchors) */
+.project-buttons{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items:stretch;
+  width:100%;
+  margin-top: 20px;
+}
+.project-button{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  padding: 20px;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 14px;
+  border: 1px solid rgba(11,18,32,0.04);
+  box-shadow: var(--card-shadow);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  text-decoration:none;
+  min-height:140px;
+}
+.project-button h3{ font-size:18px; margin:0; color:#0b1220; }
+.project-button p{ margin:0; color:var(--muted); font-size:14px; line-height:1.45; }
+
+/* CTA area for project buttons */
+.project-button .meta{ margin-top:auto; display:flex; gap:10px; align-items:center; }
+
+/* Hover / focus */
+.project-button:hover, .project-button:focus{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(11,18,32,0.08);
+  border-color: rgba(82,102,255,0.18);
+}
+
+/* Footer */
+.footer{
+  text-align:center;
+  background: transparent;
+  padding: 42px 20px;
+  color: var(--muted);
+  border-top: 1px solid rgba(11,18,32,0.03);
+  margin-top: 48px;
+}
+
+/* Photo grid: switch to CSS grid for nicer layout */
+#photo-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 12px;
+  align-items:stretch;
+}
+.photo{
+  width:100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius:10px;
+  display:block;
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: 0 6px 24px rgba(11,18,32,0.06);
+}
+.photo:hover{ transform: translateY(-6px) scale(1.02); box-shadow: 0 20px 40px rgba(11,18,32,0.09); }
+
+/* Utility */
+.gridRow{ padding:0; }
+.proj-head p{ color:var(--muted); max-width:900px; margin:0 auto; line-height:1.6; }
+
+/* Responsiveness / small screens tweaks */
+@media (max-width: 900px){
+  .header{ position:static; transform:none; margin: 16px auto 0; }
+  .head{ padding: 40px 16px; }
+  .container{ margin: 48px auto; }
+  .photo{ height:140px; }
+  .about-me{ padding: 20px; }
+}
+
+@media (max-width: 520px){
+  h1{ font-size: clamp(30px, 12vw, 46px); text-align:left; }
+  h2{ text-align:left; }
+  .head{ justify-content:flex-start; padding-left:18px; }
+  .header{ width: calc(100% - 36px); left:18px; transform:none; }
+  .photo{ height:120px; }
+  .project-button{ padding:16px; border-radius:10px; }
+}
+
+/* Minor compatibility fixes for elements that existed previously */
+.container-design{ display:flex; justify-content:center; align-items:center; text-align:center; max-width:1200px; padding-top:80px; margin:auto; }
