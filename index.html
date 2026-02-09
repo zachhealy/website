@@ -1,111 +1,295 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Zach Healy</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <link rel='icon' href="zjh.png">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/5c1e65ff90.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zach Healy</title>
+
+    <link rel="icon" href="zjh.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/5c1e65ff90.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  
   <body>
-    <div class = 'head'>
-        <div id="particles-js">
-          <div class = 'header'>
-            <nav>
-              <ul>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html"><img src = 'zjh-white.png'></a></li>
-                <li><a href="design.html">Design</a></li>
-              </ul>
-            </nav>
+    <main class="page">
+      <!-- Top / hero -->
+      <header class="hero">
+        <div class="hero-inner">
+          <div class="hero-meta">
+            <span class="hero-pill">Open to opportunities</span>
+            <span class="hero-location">St. Louis, MO · USA (Remote-friendly)</span>
           </div>
-        </div>
-        
-        <div class="container">
-            <h1>Zach Healy</h1>
-            <h2>Developer & Graphic Designer</h2>
-        </div>
-    </div>
 
-    <div class="am-container">
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>Getting to design and create new software and websites with real values was always something that 
-                I was drawn towards, and with both a programming and design background, I decided to take the steps 
-                to be a frontend developer. I am currently working towards my computer science degree right now, and 
-                have been a graphic designer for the last 2 years, working for my university as well as for companies 
-                such as Redbull and Riot Games.</p>
-        </section>
-    </div>
-    </br>
-    <div class="proj-container">
-      <div class = 'proj-head'>
-        <h2>Projects</h2>
-        <p>A pretty good summary of a lot of my projects! If nothing here is stunning to you, feel free to check
-          out my <a href = 'https://www.github.com/zachhealy'>GitHub</a>, I try to keep all of my code updated on there
-          for both my own sake and the sake of anyone interested! It features most of the work from my 4 years of college
-          as well as some personal projects like the website we are on now!
-        </p>
-      </div>
-        <section class="project-buttons">
-            <a class="project-button" href="https://github.com/zachhealy/NHLDataAnalysis">
-                <h3>NHL Player Stat Tracker</h3>
-                <p>My final project that I made for my Computer Science 3 class. It uses selenium to scrape the NHL website and organizes all of the stat-lines in a readable table. Also allowing for organization and searching either by stat-line or player name</p>
-            </a>
-            <a class="project-button" href="https://github.com/zachhealy/website">
-                <h3>My Personal Website</h3>
-                <p>A website coded using HTML, CSS, and JavaScript to showcase my development and design portfolio! Future plans include a spot for people to submit a form to get in contact with me, managed through a database.</p>
-            </a>
-            <a class="project-button" href="https://plantjobs.greatdane.com">
-                <h3>Plant Jobs Maintenance</h3>
-                <p>This was a task given during my internship at Great Dane to keep their jobs websites up to date for their various plants, in multiple languages</p>
-            </a>
-            <a class="project-button" href="https://fleet-pulse.com">
-                <h3>FleetPulse</h3>
-                <p>This was a project I worked on during my internship at Great Dane. The goal was to work on a website's flow and SEO in order to help retain existing customers, as well as draw in new ones.</p>
-            </a>
-            <a class="project-button" href="https://github.com/zachhealy/programmingProblems">
-              <h3>Programming Problems</h3>
-              <p>This repo houses a bunch of the various programming problems from sites such as LeetCode and HackerRank that I've stored over time. Have a challenge for me? Message me and I'd love to give it a shot!</p>
-          </a>
-            <a class = 'project-button' onclick="confetti({particleCount: 1000, spread: 10000, origin: { y: 0.6 }});">
-                <h3>Confetti</h3>
-                <p>For all those times the Canvas confetti doesn't work</p>
-            </a>
-        </section>
-        
-    </div>
-
-    <br>
-    
-      <section class = 'footer'>
-        <div><p>
-          Copyright ©
-              <script>
-                  document.write(new Date().getFullYear())
-              </script>
-              Zach Healy
-              <a href = 'https://github.com/zachhealy' target ="_blank">
-                  <i class="fab fa-github"></i>
-              </a>
+          <h1 class="hero-name gradient-text">Zach Healy</h1>
+          <p class="hero-subtitle">
+            I am an application developer with a passion for building web applications and learning new technologies.
+             I'm currently working at Hunter Engineering as an Application Developer I.
+             <br>
+             <br>
+             Current learnings are geared towards midtier development with a .net stack
           </p>
-          <p>Connect with me on <a href="https://www.linkedin.com/in/zachhealy/">Linkedin</a>,</p>
-          <p>Even follow me on <a href="http://twitter.com/zjhealy">Twitter</a>!</p> 
+
+          <div class="hero-actions">
+            <a href="mailto:zachjhealy@gmail.com" class="btn primary">Contact</a>
+            <a href="https://www.linkedin.com/in/zachhealy/" class="btn ghost" target="_blank"
+              >View full LinkedIn</a
+            >
+          </div>
+
+          <a href="#experience" class="scroll-cue" aria-label="Scroll to experience">
+            <span class="scroll-text">Scroll to experience</span>
+            <span class="scroll-arrow">
+              <i class="fas fa-arrow-down"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p class="section-subtitle">
+            Replace these examples with your own roles, responsibilities and
+            stack. Each item is built like a clean resume block.
+          </p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Experience item -->
+          <article class="experience-item">
+            <header class="experience-header">
+              <div>
+                <h3 class="experience-role">Application Developer I</h3>
+                <p class="experience-company">Hunter Engineering Company · Full‑time</p>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-dates">July 2024 – Present</span>
+                <span class="experience-location">Hybrid</span>
+              </div>
+            </header>
+
+            <ul class="experience-points">
+              <li>
+                Worked on a large scale data migration project to migrate data from AS400 to IFS, using MSSQL, Airflow, and various customer Python scripts to extract and manipulate the data.
+              </li>
+              <li>
+                Tuned and optimized database queries and processes to improve business efficency and accuracy for other development teams. 
+              </li>
+              <li>
+                Active code reviewer for other teams to ensure quality and consistency across our codebases. 
+              </li>
+            </ul>
+
+            <div class="tech-stack">
+              <span class="tech-pill">MSSQL</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Airflow</span>
+              <span class="tech-pill">Azure</span>
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">IFS</span>
+              <span class="tech-pill">Jira</span>
+            </div>
+          </article>
+
+          <!-- Experience item -->
+          <article class="experience-item">
+            <header class="experience-header">
+              <div>
+                <h3 class="experience-role">IT Intern</h3>
+                <p class="experience-company">Hunter Engineering Company · Internship</p>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-dates">May 2023 – August 2023</span>
+                <span class="experience-dates">January 2024 – July 2024</span>
+                <span class="experience-location">On-Site</span>
+              </div>
+            </header>
+
+            <ul class="experience-points">
+              <li>
+                Work on a team to manage a queue of technical issues including the deploying of computers, fixing hardware 
+                and software issues, and looking into various larger scale issues with servers and software.
+              </li>
+              <li>
+                Develop in-house web applications for the security and the web application team using Vue.js.
+              </li>
+            </ul>
+
+            <div class="tech-stack">
+              <span class="tech-pill">Jira</span>
+              <span class="tech-pill">Desktop Support</span>
+              <span class="tech-pill">Computer Deployment</span>
+              <span class="tech-pill">Windows OS</span>
+              <span class="tech-pill">Active Directory</span>
+              <span class="tech-pill">Group Policy</span>
+              <span class="tech-pill">Microsoft Office/365</span>
+              <span class="tech-pill">Full stack development</span>
+              <span class="tech-pill">Vue.js</span>
+            </div>
+          </article>
+
+          <!-- Experience item -->
+          <article class="experience-item">
+            <header class="experience-header">
+              <div>
+                <h3 class="experience-role">Graphic Designer</h3>
+                <p class="experience-company">Southeast Missouri State University · Part-Time</p>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-dates">March 2021 – December 2023</span>
+                <span class="experience-location">Various</span>
+              </div>
+            </header>
+
+            <ul class="experience-points">
+              <li>
+                Utilized multiple Adobe products such as Photoshop, Illustrator, Lightroom, and After Effects to make graphics for 
+                promotional and in-house use. Projects included flyers, logos, branding guides, and mockups for potential renovations
+              </li>
+              <li>
+                Collaborated with various organizations such as intramurals and campus clubs to help create promotional material
+              </li>
+            </ul>
+
+            <div class="tech-stack">
+              <span class="tech-pill">Adobe Creative Cloud</span>
+              <span class="tech-pill">Illustrator</span>
+              <span class="tech-pill">Lightroom</span>
+              <span class="tech-pill">After Effects</span>
+              <span class="tech-pill">Photoshop</span>
+              <span class="tech-pill">Branding</span>
+            </div>
+          </article>
         </div>
       </section>
-      
-      <script src = 'js/confetti.js'></script>
-      <script src = 'js/parts.js'></script>
-      <script src = 'js/transition.js'></script>
 
+      <!-- Personal -->
+      <section class="section personal-section" id="personal">
+        <div class="section-header">
+          <h2>Personal</h2>
+          <p class="section-subtitle">
+            A space for me to showcase anything else I find interesting in life.
+          </p>
+        </div>
+
+        <div class="personal-content">
+          <div class="personal-card">
+            <img src="h+z.jpg" alt="An incredible photo, from the best day" />
+            <br>
+            <p class="section-subtitle">October 4, 2025 - The most perfect day... <3 </p>
+          </div>
+
+          <div class="personal-card personal-note">
+            <h3 class="personal-heading">Some quote I enjoy :</h3>
+            <p>
+              "It's never a crime to exist!"
+              <br> 
+              - Franky (One Piece)
+            </p>
+            <br>
+            <p>
+              "See you space cowboy..."
+              <br> 
+              - Cowboy Bebop
+            </p>
+            <br>
+            <p>
+              "Here’s some simple advice. Always be yourself. Never take yourself too seriously. And beware of advice from experts, pigs, and members of Parliament."
+              <br> 
+              - Jim Henson
+            </p>
+            <br>
+            <button type="button" class="btn primary personal-confetti">
+              Celebrate with confetti
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <p class="footer-name">Zach Healy</p>
+            <p class="footer-copy">
+              © <span id="year"></span> All rights reserved.
+            </p>
+          </div>
+
+          <div class="footer-right">
+            <div class="social-links">
+              <a
+                href="https://github.com/zachhealy"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/zachhealy/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/zjhealy"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+      // Lightweight copyright year helper
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+
+      // Personal section confetti
+      const confettiButton = document.querySelector(".personal-confetti");
+      if (confettiButton && typeof confetti === "function") {
+        confettiButton.addEventListener("click", () => {
+          const rect = confettiButton.getBoundingClientRect();
+          const originX = (rect.left + rect.width / 2) / window.innerWidth;
+          const originY = (rect.top + rect.height / 2) / window.innerHeight;
+
+          // Main burst from the button position
+          confetti({
+            particleCount: 220,
+            spread: 110,
+            startVelocity: 45,
+            scalar: 1.1,
+            ticks: 160,
+            origin: { x: originX, y: originY }
+          });
+
+          // Secondary, wider burst to cover more of the page
+          confetti({
+            particleCount: 180,
+            spread: 140,
+            startVelocity: 35,
+            scalar: 1.0,
+            ticks: 180,
+            origin: { x: originX, y: originY }
+          });
+        });
+      }
+    </script>
   </body>
-
 </html>
