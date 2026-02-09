@@ -386,6 +386,109 @@ a:hover {
   background: linear-gradient(135deg, var(--accent), var(--accent-purple));
 }
 
+/* EDUCATION
+   ------------------------------------------------------------------ */
+
+.education-list {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.education-item {
+  border-radius: 14px;
+  background:
+    linear-gradient(
+      140deg,
+      rgba(15, 23, 42, 0.88),
+      rgba(15, 23, 42, 0.88)
+    ),
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 55%);
+  padding: 16px 18px 14px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-subtle);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.education-degree {
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.education-school {
+  margin: 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.education-meta {
+  text-align: right;
+  font-size: 12px;
+  color: #9ca3af;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.education-dates {
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.education-gpa {
+  opacity: 0.86;
+}
+
+.education-details {
+  margin-top: 10px;
+}
+
+.education-clubs {
+  margin-top: 8px;
+}
+
+.clubs-heading {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e5e7eb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.clubs-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: var(--muted);
+  list-style: none;
+}
+
+.clubs-list li {
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.clubs-list li::before {
+  content: "▸";
+  position: absolute;
+  left: -14px;
+  color: var(--accent);
+  font-size: 11px;
+}
+
 /* PERSONAL
    ------------------------------------------------------------------ */
 
@@ -549,6 +652,18 @@ a:hover {
   }
 
   .experience-meta {
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-meta {
     text-align: left;
     flex-direction: row;
     flex-wrap: wrap;
