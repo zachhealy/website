@@ -1,337 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zach Healy</title>
 
-    <link rel="icon" href="zjh.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <script
-      src="https://kit.fontawesome.com/5c1e65ff90.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <main class="page">
-      <!-- Top / hero -->
-      <header class="hero">
-        <div class="hero-inner">
-          <div class="hero-meta">
-            <span class="hero-pill">Open to opportunities</span>
-            <span class="hero-location">St. Louis, MO · USA (Remote-friendly)</span>
-          </div>
+  <!-- SEO & Metadata -->
+  <title>Zach Healy — Application Developer</title>
+  <meta name="description"
+    content="Personal portfolio & resume of Zach Healy, an Application Developer based in St. Louis, MO specializing in web applications, data migration, and .NET stack development." />
+  <meta name="author" content="Zach Healy" />
+  <meta name="robots" content="index, follow" />
 
-          <h1 class="hero-name gradient-text">Zach Healy</h1>
-          <p class="hero-subtitle">
-            I am an application developer with a passion for building web applications and learning new technologies.
-             I'm currently working at Hunter Engineering as an Application Developer I.
-             <br>
-             <br>
-             Current learnings are geared towards midtier development with a .NET stack
-          </p>
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zjhealy.com/" />
+  <meta property="og:title" content="Zach Healy — Application Developer" />
+  <meta property="og:description"
+    content="Application Developer at Hunter Engineering Company. Specializing in Python, MSSQL, Vue.js, and midtier .NET development." />
+  <meta property="og:image" content="zjh.png" />
 
-          <div class="hero-actions">
-            <a href="mailto:zachjhealy@gmail.com" class="btn primary">Contact</a>
-            <a href="https://www.linkedin.com/in/zachhealy/" class="btn ghost" target="_blank"
-              >View full LinkedIn</a
-            >
-          </div>
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@zjhealy" />
+  <meta name="twitter:title" content="Zach Healy — Application Developer" />
+  <meta name="twitter:description"
+    content="Application Developer at Hunter Engineering Company. Specializing in Python, MSSQL, Vue.js, and midtier .NET development." />
+  <meta name="twitter:image" content="zjh.png" />
 
-          <a href="#experience" class="scroll-cue" aria-label="Scroll to experience">
-            <span class="scroll-text">Scroll to experience</span>
-            <span class="scroll-arrow">
-              <i class="fas fa-arrow-down"></i>
-            </span>
+  <link rel="icon" href="zjh.png" type="image/png" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Font Awesome Icons (Deferred for fast page loads) -->
+  <script src="https://kit.fontawesome.com/5c1e65ff90.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <!-- Top Sticky Navigation -->
+  <nav class="nav-bar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Zach Healy - Home">
+        <span class="nav-brand-dot"></span>
+        <span class="nav-brand-name">Zach Healy</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#personal" class="nav-link">Personal</a>
+        <a href="mailto:zachjhealy@gmail.com" class="nav-btn">Get In Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <!-- Top / Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-meta">
+          <span class="hero-pill">
+            <span class="pulse-indicator"></span>
+            Open to opportunities
+          </span>
+          <span class="hero-location">
+            <i class="fas fa-location-dot"></i>
+            St. Louis, MO · USA (Remote-friendly)
+          </span>
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Zach Healy</span>
+        </h1>
+
+        <p class="hero-role">Application Developer</p>
+
+        <p class="hero-subtitle">
+          I build robust customer-facing web applications, performant REST APIs, and scalable database systems. Currently
+          engineering full stack web applications at <strong>Hunter Engineering</strong> using <strong>Angular, RxJS, ASP.NET Core, and MSSQL</strong> within an Agile Scrum environment with <strong>Azure DevOps (ADO)</strong>.
+        </p>
+
+        <!-- Core Skill Highlights -->
+        <div class="hero-tags" aria-label="Core Technical Focus">
+          <span class="hero-tag"><i class="fab fa-angular"></i> Angular &amp; RxJS</span>
+          <span class="hero-tag"><i class="fas fa-code"></i> C# &amp; ASP.NET Core</span>
+          <span class="hero-tag"><i class="fas fa-database"></i> MSSQL &amp; EF</span>
+          <span class="hero-tag"><i class="fas fa-infinity"></i> Azure DevOps (ADO)</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="mailto:zachjhealy@gmail.com" class="btn primary">
+            <i class="fas fa-envelope"></i>
+            <span>Email Me</span>
+          </a>
+
+          <button type="button" class="btn ghost copy-email-btn" id="copyEmailBtn"
+            aria-label="Copy email address to clipboard">
+            <i class="fas fa-copy" id="copyIcon"></i>
+            <span id="copyText">Copy Email</span>
+          </button>
+
+          <a href="https://www.linkedin.com/in/zachhealy/" class="btn ghost" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit Zach's LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/zachhealy" class="btn ghost" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit Zach's GitHub profile">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
           </a>
         </div>
-      </header>
 
-      <!-- Experience -->
-      <section class="section" id="experience">
-        <div class="section-header">
-          <h2>Experience</h2>
-          <p class="section-subtitle">
-            My experience in the past couple years between application development, internships, and other passions.
-          </p>
+        <a href="#experience" class="scroll-cue" aria-label="Scroll to experience section">
+          <span class="scroll-text">Explore Experience</span>
+          <span class="scroll-arrow">
+            <i class="fas fa-arrow-down"></i>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <span class="section-badge">Career Journey</span>
+        <h2>Experience</h2>
+        <p class="section-subtitle">
+          My professional progression spanning application development, database architecture, and design.
+        </p>
+      </div>
+
+      <div class="experience-list">
+
+        <!-- =======================================================================
+             GUIDE: HOW TO ADD A NEW JOB ENTRY
+             Simply copy the <article class="experience-item"> block below, 
+             paste it right at the top of this list, and update the role, dates,
+             and bullet points. Keep "current-role" class on your active position!
+             ======================================================================= -->
+
+        <!-- Job Entry: Hunter Engineering (Current Position) -->
+        <article class="experience-item current-role">
+          <div class="item-status-banner">
+            <span class="status-indicator"></span>
+            <span>Current Role</span>
+          </div>
+
+          <header class="experience-header">
+            <div class="role-group">
+              <h3 class="experience-role">Application Developer I</h3>
+              <p class="experience-company">Hunter Engineering Company · Full‑time</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-dates"><i class="far fa-calendar-alt"></i> July 2024 – Present</span>
+              <span class="experience-location"><i class="fas fa-laptop-house"></i> Hybrid (St. Louis, MO)</span>
+            </div>
+          </header>
+
+          <ul class="experience-points">
+            <li>
+              Architect and develop customer-facing web applications across the full stack, pairing reactive <strong>Angular</strong> interfaces and <strong>RxJS</strong> state management with scalable <strong>ASP.NET Core</strong>, <strong>C#</strong>, and <strong>Entity Framework</strong> REST APIs.
+            </li>
+            <li>
+              Engineered large-scale data migration pipelines transitioning legacy AS400 records to IFS ERP, while optimizing high-volume <strong>MSSQL</strong> database schemas, stored procedures, and queries for low latency and data integrity.
+            </li>
+            <li>
+              Collaborate within an <strong>Agile Scrum</strong> team delivering sprint commitments through user stories and daily standups, deploying releases via <strong>Azure DevOps (ADO)</strong> CI/CD pipelines, and conducting peer code reviews.
+            </li>
+          </ul>
+
+          <div class="tech-stack" aria-label="Technologies used in this role">
+            <span class="tech-pill">Angular</span>
+            <span class="tech-pill">RxJS</span>
+            <span class="tech-pill">C# (.NET)</span>
+            <span class="tech-pill">ASP.NET Core</span>
+            <span class="tech-pill">Entity Framework</span>
+            <span class="tech-pill">MSSQL</span>
+            <span class="tech-pill">Azure DevOps</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">Agile / Scrum</span>
+            <span class="tech-pill">Git</span>
+          </div>
+        </article>
+
+        <!-- Job Entry: Hunter Engineering (IT Intern) -->
+        <article class="experience-item">
+          <header class="experience-header">
+            <div class="role-group">
+              <h3 class="experience-role">IT Intern</h3>
+              <p class="experience-company">Hunter Engineering Company · Internship</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-dates"><i class="far fa-calendar-alt"></i> May 2023 – Aug 2023 &amp; Jan 2024 –
+                July 2024</span>
+              <span class="experience-location"><i class="fas fa-building"></i> On-Site</span>
+            </div>
+          </header>
+
+          <ul class="experience-points">
+            <li>
+              Collaborated within a cross-functional infrastructure team managing hardware and software deployments,
+              system troubleshooting, and server-level diagnostics.
+            </li>
+            <li>
+              Developed custom in-house web applications for the internal cybersecurity and web applications teams
+              leveraging Vue.js and full-stack utilities.
+            </li>
+            <li>
+              Administered user directories, policy configurations, and workstation fleet readiness using Active
+              Directory and Windows Group Policy.
+            </li>
+          </ul>
+
+          <div class="tech-stack" aria-label="Technologies used in this role">
+            <span class="tech-pill">Vue.js</span>
+            <span class="tech-pill">Full Stack</span>
+            <span class="tech-pill">Active Directory</span>
+            <span class="tech-pill">Group Policy</span>
+            <span class="tech-pill">Windows OS</span>
+            <span class="tech-pill">Jira</span>
+            <span class="tech-pill">Microsoft 365</span>
+          </div>
+        </article>
+
+        <!-- Job Entry: SEMO (Graphic Designer) -->
+        <article class="experience-item">
+          <header class="experience-header">
+            <div class="role-group">
+              <h3 class="experience-role">Graphic Designer</h3>
+              <p class="experience-company">Southeast Missouri State University · Part-Time</p>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-dates"><i class="far fa-calendar-alt"></i> March 2021 – December 2023</span>
+              <span class="experience-location"><i class="fas fa-map-marker-alt"></i> Cape Girardeau, MO</span>
+            </div>
+          </header>
+
+          <ul class="experience-points">
+            <li>
+              Designed high-impact visual assets and marketing campaigns utilizing the Adobe Creative Cloud suite
+              (Photoshop, Illustrator, Lightroom, and After Effects). Deliverables included brand style guides, official
+              logos, architectural renovation mockups, and campus-wide promotional collateral.
+            </li>
+            <li>
+              Partnered with campus organizations, intramural sports leagues, and student bodies to direct cohesive
+              visual branding strategies across social and print mediums.
+            </li>
+          </ul>
+
+          <div class="tech-stack" aria-label="Technologies used in this role">
+            <span class="tech-pill">Adobe Creative Cloud</span>
+            <span class="tech-pill">Illustrator</span>
+            <span class="tech-pill">Photoshop</span>
+            <span class="tech-pill">Lightroom</span>
+            <span class="tech-pill">After Effects</span>
+            <span class="tech-pill">Brand Identity</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills & Technologies Matrix -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <span class="section-badge">Tooling &amp; Expertise</span>
+        <h2>Skills &amp; Technologies</h2>
+        <p class="section-subtitle">
+          Core technical competencies honed across professional software engineering and creative production.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category: Languages -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge"><i class="fas fa-code"></i></div>
+            <h3 class="skill-category-title">Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">C# (.NET)</span>
+            <span class="skill-tag">SQL (MSSQL)</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5 &amp; CSS3</span>
+          </div>
         </div>
 
-        <div class="experience-list">
-          <!-- Experience item -->
-          <article class="experience-item">
-            <header class="experience-header">
-              <div>
-                <h3 class="experience-role">Application Developer I</h3>
-                <p class="experience-company">Hunter Engineering Company · Full‑time</p>
-              </div>
-              <div class="experience-meta">
-                <span class="experience-dates">July 2024 – Present</span>
-                <span class="experience-location">Hybrid</span>
-              </div>
-            </header>
-
-            <ul class="experience-points">
-              <li>
-                Worked on a large scale data migration project to migrate data from AS400 to IFS, using MSSQL, Airflow, and various customer Python scripts to extract and manipulate the data.
-              </li>
-              <li>
-                Tuned and optimized database queries and processes to improve business efficency and accuracy for other development teams. 
-              </li>
-              <li>
-                Active code reviewer for other teams to ensure quality and consistency across our codebases. 
-              </li>
-            </ul>
-
-            <div class="tech-stack">
-              <span class="tech-pill">MSSQL</span>
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">Airflow</span>
-              <span class="tech-pill">Azure</span>
-              <span class="tech-pill">Git</span>
-              <span class="tech-pill">Docker</span>
-              <span class="tech-pill">IFS</span>
-              <span class="tech-pill">Jira</span>
-            </div>
-          </article>
-
-          <!-- Experience item -->
-          <article class="experience-item">
-            <header class="experience-header">
-              <div>
-                <h3 class="experience-role">IT Intern</h3>
-                <p class="experience-company">Hunter Engineering Company · Internship</p>
-              </div>
-              <div class="experience-meta">
-                <span class="experience-dates">May 2023 – August 2023 /</span>
-                <span class="experience-dates">January 2024 – July 2024</span>
-                <span class="experience-location">On-Site</span>
-              </div>
-            </header>
-
-            <ul class="experience-points">
-              <li>
-                Work on a team to manage a queue of technical issues including the deploying of computers, fixing hardware 
-                and software issues, and looking into various larger scale issues with servers and software.
-              </li>
-              <li>
-                Develop in-house web applications for the security and the web application team using Vue.js.
-              </li>
-            </ul>
-
-            <div class="tech-stack">
-              <span class="tech-pill">Jira</span>
-              <span class="tech-pill">Desktop Support</span>
-              <span class="tech-pill">Computer Deployment</span>
-              <span class="tech-pill">Windows OS</span>
-              <span class="tech-pill">Active Directory</span>
-              <span class="tech-pill">Group Policy</span>
-              <span class="tech-pill">Microsoft Office/365</span>
-              <span class="tech-pill">Full stack development</span>
-              <span class="tech-pill">Vue.js</span>
-            </div>
-          </article>
-
-          <!-- Experience item -->
-          <article class="experience-item">
-            <header class="experience-header">
-              <div>
-                <h3 class="experience-role">Graphic Designer</h3>
-                <p class="experience-company">Southeast Missouri State University · Part-Time</p>
-              </div>
-              <div class="experience-meta">
-                <span class="experience-dates">March 2021 – December 2023</span>
-                <span class="experience-location">Various</span>
-              </div>
-            </header>
-
-            <ul class="experience-points">
-              <li>
-                Utilized multiple Adobe products such as Photoshop, Illustrator, Lightroom, and After Effects to make graphics for 
-                promotional and in-house use. Projects included flyers, logos, branding guides, and mockups for potential renovations
-              </li>
-              <li>
-                Collaborated with various organizations such as intramurals and campus clubs to help create promotional material
-              </li>
-            </ul>
-
-            <div class="tech-stack">
-              <span class="tech-pill">Adobe Creative Cloud</span>
-              <span class="tech-pill">Illustrator</span>
-              <span class="tech-pill">Lightroom</span>
-              <span class="tech-pill">After Effects</span>
-              <span class="tech-pill">Photoshop</span>
-              <span class="tech-pill">Branding</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section class="section" id="education">
-        <div class="section-header">
-          <h2>Education</h2>
-          <p class="section-subtitle">
-            My academic background and involvement during my college years.
-          </p>
+        <!-- Category: Frameworks & Core -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge"><i class="fas fa-layer-group"></i></div>
+            <h3 class="skill-category-title">Frameworks &amp; Core</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">RxJS</span>
+            <span class="skill-tag">ASP.NET Core</span>
+            <span class="skill-tag">Entity Framework</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Agile (Scrum)</span>
+          </div>
         </div>
 
-        <div class="education-list">
-          <article class="education-item">
-            <header class="education-header">
+        <!-- Category: Data & Cloud -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge"><i class="fas fa-database"></i></div>
+            <h3 class="skill-category-title">Data &amp; DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MSSQL Server</span>
+            <span class="skill-tag">Azure DevOps (ADO)</span>
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">IBM AS400</span>
+            <span class="skill-tag">IFS ERP</span>
+          </div>
+        </div>
+
+        <!-- Category: Creative & Tooling -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge"><i class="fas fa-palette"></i></div>
+            <h3 class="skill-category-title">Design &amp; Workflow</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Adobe Photoshop</span>
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">After Effects</span>
+            <span class="skill-tag">Lightroom</span>
+            <span class="skill-tag">Jira &amp; Agile</span>
+            <span class="skill-tag">Active Directory</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <span class="section-badge">Academics</span>
+        <h2>Education</h2>
+        <p class="section-subtitle">
+          Formal computer science fundamentals combined with student leadership.
+        </p>
+      </div>
+
+      <div class="education-list">
+        <article class="education-card">
+          <header class="education-header">
+            <div class="education-main">
+              <div class="edu-icon-badge">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
               <div>
                 <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
                 <p class="education-school">Southeast Missouri State University</p>
               </div>
-              <div class="education-meta">
-                <span class="education-dates">Graduated: Decamber 2023</span>
-                <span class="education-gpa">GPA: 3.84</span>
-              </div>
-            </header>
+            </div>
+            <div class="education-meta">
+              <span class="education-dates"><i class="far fa-calendar-check"></i> Graduated December 2023</span>
+              <span class="education-gpa"><i class="fas fa-award"></i> GPA: 3.84 / 4.0</span>
+            </div>
+          </header>
 
-            <div class="education-details">
-              <div class="education-clubs">
-                <h4 class="clubs-heading">Clubs & Organizations</h4>
-                <ul class="clubs-list">
-                  <li>Upsilon Pi Epsilon - Computer Science Honors Society</li>
-                  <li>SEMO Esports - President of Organization</li>
-                  <li>SEMO Recreation Center - Employee + Designer</li>
-                </ul>
+          <div class="education-details">
+            <h4 class="clubs-heading">Leadership, Clubs &amp; Activities</h4>
+            <div class="clubs-grid">
+              <div class="club-chip">
+                <span class="club-bullet"></span>
+                <div class="club-content">
+                  <strong>Upsilon Pi Epsilon</strong>
+                  <span>International Computer Science Honors Society</span>
+                </div>
+              </div>
+              <div class="club-chip">
+                <span class="club-bullet"></span>
+                <div class="club-content">
+                  <strong>SEMO Esports</strong>
+                  <span>President of Organization &amp; Community Lead</span>
+                </div>
+              </div>
+              <div class="club-chip">
+                <span class="club-bullet"></span>
+                <div class="club-content">
+                  <strong>SEMO Recreation Center</strong>
+                  <span>Staff Member &amp; Graphic Designer</span>
+                </div>
               </div>
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <!-- Personal -->
-      <section class="section personal-section" id="personal">
-        <div class="section-header">
-          <h2>Personal</h2>
-          <p class="section-subtitle">
-            A space for me to showcase anything else I find interesting in life.
-          </p>
+    <!-- Personal Section -->
+    <section class="section personal-section" id="personal">
+      <div class="section-header">
+        <span class="section-badge">Life &amp; Perspectives</span>
+        <h2>Personal</h2>
+        <p class="section-subtitle">
+          Beyond the keyboard — memorable milestones, favorite stories, and inspiration.
+        </p>
+      </div>
+
+      <div class="personal-grid">
+        <!-- Photo Card -->
+        <div class="personal-card photo-card">
+          <div class="photo-wrapper">
+            <img src="h+z.jpg" alt="Zach Healy and his partner on their wedding day" loading="lazy" decoding="async" />
+            <div class="photo-overlay">
+              <span class="photo-tag"><i class="fas fa-heart"></i> Life Milestone</span>
+            </div>
+          </div>
+          <div class="photo-caption">
+            <p class="photo-date">October 4, 2025</p>
+            <p class="photo-text">The most perfect day... &lt;3</p>
+          </div>
         </div>
 
-        <div class="personal-content">
-          <div class="personal-card">
-            <img src="h+z.jpg" alt="An incredible photo, from the best day" />
-            <br>
-            <p class="section-subtitle">October 4, 2025 - The most perfect day... <3 </p>
+        <!-- Quotes Card -->
+        <div class="personal-card quotes-card">
+          <div class="quotes-header">
+            <div class="quotes-title-group">
+              <i class="fas fa-quote-left quote-header-icon"></i>
+              <h3 class="personal-heading">Quotes I Live By</h3>
+            </div>
+            <span class="quotes-tag">Words of Wisdom</span>
           </div>
 
-          <div class="personal-card personal-note">
-            <h3 class="personal-heading">Some quotes I enjoy :</h3>
-            <p>
-              "It's never a crime to exist!"
-              <br> 
-              - Franky (One Piece)
-            </p>
-            <br>
-            <p>
-              "See you space cowboy..."
-              <br> 
-              - Cowboy Bebop
-            </p>
-            <br>
-            <p>
-              "Here’s some simple advice. Always be yourself. Never take yourself too seriously. 
-              And beware of advice from experts, pigs, and members of Parliament."
-              <br> 
-              - Jim Henson (Voice of Kermit the Frog)
-            </p>
-            <br>
-            <p>
-              "For those who come after"
-              <br> 
-              - Gustave (Clair Obscur: Expedition 33)
-            </p>
-            <br>
-            <button type="button" class="btn primary personal-confetti">
-              Celebrate with confetti
+          <div class="quotes-list">
+            <blockquote class="quote-item">
+              <p class="quote-text">"It's never a crime to exist!"</p>
+              <cite class="quote-author">— Franky, <em>One Piece</em></cite>
+            </blockquote>
+
+            <blockquote class="quote-item">
+              <p class="quote-text">"See you space cowboy..."</p>
+              <cite class="quote-author">— <em>Cowboy Bebop</em></cite>
+            </blockquote>
+
+            <blockquote class="quote-item">
+              <p class="quote-text">
+                "Here’s some simple advice. Always be yourself. Never take yourself too seriously. And beware of advice
+                from experts, pigs, and members of Parliament."
+              </p>
+              <cite class="quote-author">— Jim Henson, <em>Voice of Kermit the Frog</em></cite>
+            </blockquote>
+
+            <blockquote class="quote-item">
+              <p class="quote-text">"For those who come after"</p>
+              <cite class="quote-author">— Gustave, <em>Clair Obscur: Expedition 33</em></cite>
+            </blockquote>
+          </div>
+
+          <div class="quotes-footer">
+            <button type="button" class="btn primary personal-confetti" id="confettiBtn">
+              <i class="fas fa-sparkles"></i>
+              <span>Celebrate with Confetti! 🎉</span>
             </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div class="footer-left">
-            <p class="footer-name">Zach Healy</p>
-            <p class="footer-copy">
-              © <span id="year"></span> All rights reserved.
-            </p>
-          </div>
-
-          <div class="footer-right">
-            <div class="social-links">
-              <a
-                href="https://github.com/zachhealy"
-                target="_blank"
-                aria-label="GitHub"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/zachhealy/"
-                target="_blank"
-                aria-label="LinkedIn"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="https://twitter.com/zjhealy"
-                target="_blank"
-                aria-label="Twitter"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-          </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p class="footer-name">Zach Healy</p>
+          <p class="footer-copy">
+            Designed &amp; Developed with care. &copy; <span id="year"></span> All rights reserved.
+          </p>
         </div>
-      </footer>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script>
-      // Lightweight copyright year helper
-      document.getElementById("year").textContent =
-        new Date().getFullYear().toString();
+        <div class="footer-right">
+          <div class="social-links" aria-label="Social Profiles">
+            <a href="https://github.com/zachhealy" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
+              title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/zachhealy/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn profile" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/zjhealy" target="_blank" rel="noopener noreferrer"
+              aria-label="Twitter profile" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:zachjhealy@gmail.com" aria-label="Email Zach Healy" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
 
-      // Personal section confetti
-      const confettiButton = document.querySelector(".personal-confetti");
-      if (confettiButton && typeof confetti === "function") {
-        confettiButton.addEventListener("click", () => {
-          const rect = confettiButton.getBoundingClientRect();
-          const originX = (rect.left + rect.width / 2) / window.innerWidth;
-          const originY = (rect.top + rect.height / 2) / window.innerHeight;
+          <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
 
-          // Main burst from the button position
-          confetti({
-            particleCount: 220,
-            spread: 110,
-            startVelocity: 45,
-            scalar: 1.1,
-            ticks: 160,
-            origin: { x: originX, y: originY }
-          });
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-          // Secondary, wider burst to cover more of the page
-          confetti({
-            particleCount: 180,
-            spread: 140,
-            startVelocity: 35,
-            scalar: 1.0,
-            ticks: 180,
-            origin: { x: originX, y: originY }
-          });
+  <!-- Interactive Scripts -->
+  <script>
+    // 1. Dynamic copyright year
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear().toString();
+    }
+
+    // 3. Interactive Email Copy to Clipboard
+    const copyBtn = document.getElementById("copyEmailBtn");
+    const copyText = document.getElementById("copyText");
+    const copyIcon = document.getElementById("copyIcon");
+    const myEmail = "zachjhealy@gmail.com";
+
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(myEmail);
+          copyText.textContent = "Copied! ✓";
+          copyIcon.className = "fas fa-check";
+          copyBtn.classList.add("copied");
+
+          setTimeout(() => {
+            copyText.textContent = "Copy Email";
+            copyIcon.className = "fas fa-copy";
+            copyBtn.classList.remove("copied");
+          }, 2200);
+        } catch (err) {
+          // Fallback for older browsers
+          window.location.href = `mailto:${myEmail}`;
+        }
+      });
+    }
+
+    // 4. Warm Amber Confetti Celebration
+    const confettiButton = document.getElementById("confettiBtn");
+    if (confettiButton && typeof confetti === "function") {
+      confettiButton.addEventListener("click", () => {
+        const rect = confettiButton.getBoundingClientRect();
+        const originX = (rect.left + rect.width / 2) / window.innerWidth;
+        const originY = (rect.top + rect.height / 2) / window.innerHeight;
+
+        const coralNavyPalette = ["#fb7185", "#f43f5e", "#fda4af", "#60a5fa", "#3b82f6", "#ffffff"];
+
+        // Main central burst
+        confetti({
+          particleCount: 160,
+          spread: 95,
+          origin: { x: originX, y: originY },
+          colors: coralNavyPalette,
+          startVelocity: 42,
+          scalar: 1.15
         });
-      }
-    </script>
-  </body>
+
+        // Left cannon
+        setTimeout(() => {
+          confetti({
+            particleCount: 90,
+            angle: 60,
+            spread: 65,
+            origin: { x: 0.1, y: 0.8 },
+            colors: ["#fb7185", "#f43f5e", "#fda4af"]
+          });
+        }, 160);
+
+        // Right cannon
+        setTimeout(() => {
+          confetti({
+            particleCount: 90,
+            angle: 120,
+            spread: 65,
+            origin: { x: 0.9, y: 0.8 },
+            colors: ["#60a5fa", "#3b82f6", "#fda4af"]
+          });
+        }, 320);
+      });
+    }
+
+    // 5. Active nav link highlight on scroll
+    const sections = document.querySelectorAll("section[id], header[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      const scrollPosition = window.pageYOffset + 120;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
